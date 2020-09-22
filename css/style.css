@@ -45,27 +45,6 @@
           justify-content: center;
 }
 
-.main-btn span {
-  position: relative;
-}
-
-.main-btn span::after {
-  content: "";
-  position: absolute;
-  z-index: 4;
-  display: inline-block;
-  background-image: url("../img/icons/right.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  right: -56px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 30px;
-  height: 7px;
-}
-
 .main-btn_small {
   max-width: 250px;
 }
@@ -1070,6 +1049,7 @@ a {
       justify-content: space-around;
   background-color: #fff;
   margin: 0 -10px;
+  padding-bottom: 20px;
   -webkit-transform: translateY(-30px);
       -ms-transform: translateY(-30px);
           transform: translateY(-30px);
@@ -1419,10 +1399,6 @@ a {
   position: static;
   display: block;
   margin-right: 50px;
-}
-
-.testimonials__content .main-btn {
-  max-width: 570px;
 }
 
 .testimonials__content-controls {
@@ -2431,10 +2407,6 @@ a {
 }
 
 @media screen and (max-width: 740px) {
-  .main-btn span::after {
-    display: none;
-  }
-
   .section__hero {
     margin-bottom: 50px;
   }
@@ -2878,7 +2850,6 @@ a {
   }
 }
 @supports (-webkit-appearance:none){
-.main-btn span::after{background-image:url("../img/icons/right.webp")}
 .header-top__link::before{background-image:url("../img/icons/phone.webp")}
 .hero__wrapper{background-image:url("../img/section/bg.webp")}
 .symptoms-problems__item::after{background-image:url("../img/icons/angle-right.webp")}
