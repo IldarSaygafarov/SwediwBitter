@@ -212,4 +212,3 @@ testimonialTabs.forEach(function (item) {
     }
   });
 });
-
